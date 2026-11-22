@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopEase | Online Store</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="/">ShopEase<span>.</span></a>
+  <nav><a href="#products">Shop</a><a href="#orders" id="ordersLink">My Orders</a></nav>
+  <div class="nav-actions"><button class="text-btn" id="accountBtn">Login / Register</button><button class="cart-btn" id="cartBtn">Cart <b id="cartCount">0</b></button></div>
+</header>
+<main>
+  <section class="hero">
+    <div><p class="eyebrow">YOUR EVERYDAY MARKETPLACE</p><h1>Find things<br>you’ll love.</h1><p class="hero-copy">Discover useful products, great value and a simple shopping experience.</p><a class="primary-btn" href="#products">Explore products</a></div>
+    <div class="hero-art"><div class="hero-circle"></div><div class="hero-card"><span>SHOP</span><strong>Smart<br>choices.</strong><small>Made for everyday life</small></div></div>
+  </section>
+  <section class="section" id="products">
+    <div class="section-heading"><div><p class="eyebrow">OUR COLLECTION</p><h2>Popular products</h2></div><input id="searchInput" class="search" placeholder="Search products..."></div>
+    <div class="filters" id="filters"><button class="filter active" data-category="All">All</button><button class="filter" data-category="Electronics">Electronics</button><button class="filter" data-category="Fashion">Fashion</button><button class="filter" data-category="Home">Home</button></div>
+    <div id="productGrid" class="product-grid"><p>Loading products...</p></div>
+  </section>
+  <section class="section orders-section" id="orders"><div class="section-heading"><div><p class="eyebrow">YOUR ACCOUNT</p><h2>My orders</h2></div></div><div id="ordersList" class="orders-list"><p class="muted">Log in to view your orders.</p></div></section>
+</main>
+<footer><a class="brand" href="/">ShopEase<span>.</span></a><p>CodeAlpha Full Stack Development — Task 1</p></footer>
+
+<div class="overlay hidden" id="modalOverlay">
+  <div class="modal"><button class="close" id="closeModal">×</button><div id="modalContent"></div></div>
+</div>
+<div class="toast" id="toast"></div>
+<script src="app.js"></script>
+</body></html>
